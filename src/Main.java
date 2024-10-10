@@ -16,11 +16,11 @@ public class Main {
         // немного подождать».
 
         int age = 19;
-        final int ADULTHOOD = 18;
-        if (age >= ADULTHOOD) {
+        int adultHood = 18;
+        if (age >= adultHood) {
             System.out.println("Если возраст человека равен " + age +
                     " лет, то он совершеннолетний.");
-        } else  {
+        } else {
             System.out.println("Если возраст человека равен " + age +
                     " лет, он не достиг совершеннолетия, \n" +
                     "ему нужно немного подождать.");
@@ -39,12 +39,12 @@ public class Main {
         // можно идти без шапки».
 
         int airTemperature = 10;
-        final int TEMPERATURE = 5;
-        if (airTemperature > TEMPERATURE) {
+        int temperature = 5;
+        if (airTemperature > temperature) {
             System.out.println("Сегодня тепло, на улице "
                     + airTemperature +
                     " градусов, можно идти без шапки.");
-        } else  {
+        } else {
             System.out.println("Сегодня холодно, на улице "
                     + airTemperature +
                     " градусов, нужно надеть шапку.");
@@ -176,7 +176,6 @@ public class Main {
         } else {
             System.out.println("Число " + three + " больше остальных");
         }
-
 
     }
 }

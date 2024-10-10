@@ -15,13 +15,12 @@ public class Main {
         // совершеннолетний / он не достиг совершеннолетия, нужно
         // немного подождать».
 
-        int age = 10;
+        int age = 19;
         final int ADULTHOOD = 18;
         if (age >= ADULTHOOD) {
             System.out.println("Если возраст человека равен " + age +
                     " лет, то он совершеннолетний.");
-        }
-        if (age < ADULTHOOD) {
+        } else  {
             System.out.println("Если возраст человека равен " + age +
                     " лет, он не достиг совершеннолетия, \n" +
                     "ему нужно немного подождать.");
@@ -39,14 +38,13 @@ public class Main {
         // зависимости от результата) нужно надеть шапку /
         // можно идти без шапки».
 
-        int airTemperature = -10;
+        int airTemperature = 10;
         final int TEMPERATURE = 5;
         if (airTemperature > TEMPERATURE) {
             System.out.println("Сегодня тепло, на улице "
                     + airTemperature +
                     " градусов, можно идти без шапки.");
-        }
-        if (airTemperature < TEMPERATURE) {
+        } else  {
             System.out.println("Сегодня холодно, на улице "
                     + airTemperature +
                     " градусов, нужно надеть шапку.");
@@ -63,11 +61,11 @@ public class Main {
         // заплатить штраф / можно ездить спокойно».
 
         int carSpeed = 70;
-        final int MAXIMUMSPEED = 60;
+        int maximumSpeed = 60;
         System.out.println("На этой дороге ограничение скорости в "
-                + MAXIMUMSPEED +
+                + maximumSpeed +
                 "км/ч.");
-        if (carSpeed <= MAXIMUMSPEED) {
+        if (carSpeed <= maximumSpeed) {
             System.out.println("Если скорость " + carSpeed +
                     " км/ч, то можно ездить спокойно.");
         } else {
@@ -89,7 +87,7 @@ public class Main {
         // человека равен …, то ему нужно ходить … (в зависимости
         // от возраста дописать нужное)».
 
-        int ageHuman = 8;
+        int ageHuman = 25;
         if (ageHuman >= 2 && ageHuman <= 6) {
             System.out.println("Если возраст человека равен " + ageHuman +
                     " лет, то ему нужно ходить в детский сад.");
@@ -98,11 +96,11 @@ public class Main {
             System.out.println("Если возраст человека равен " + ageHuman +
                     " лет, то ему нужно ходить в школу.");
         }
-        if (ageHuman >= 18 && ageHuman < 24) {
+        if (ageHuman >= 18 && ageHuman <= 24) {
             System.out.println("Если возраст человека равен " + ageHuman +
                     " лет, то его место в университете.");
         }
-        if (ageHuman >= 24) {
+        if (ageHuman > 24) {
             System.out.println("Если возраст человека равен " + ageHuman +
                     " лет, то ему нужно ходить на работу.");
         }
@@ -166,18 +164,17 @@ public class Main {
         // которая вычисляет, какое из трех чисел бо́льшее,
         // и выводит результат в консоль.
 
-        int number = 3;
-        System.out.println("Выбрано число: " + number);
-        int one = 1;
-        int two = 2;
+
+        int one = 10;
+        int two = 200;
         int three = 3;
 
-        if (number > two) {
-            System.out.println("это число больше " + one + "  и больше " + two);
-        } else if (number < two) {
-            System.out.println("это число меньше и " + two + ", и " + three);
+        if (one > two && one > three) {
+            System.out.println("Число " + one + " больше остальных");
+        } else if (two > one && two > three) {
+            System.out.println("Число " + two + " больше остальных");
         } else {
-            System.out.println("это число больше " + one + ", но меньше " + three);
+            System.out.println("Число " + three + " больше остальных");
         }
 
     }
